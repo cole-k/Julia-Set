@@ -10,6 +10,7 @@ x_start = -2
 x_end = 2
 y_start = -1.5
 y_end = 1.5
+filename = 'julia.png'
 
 def isBounded(z,c): #returns iterations to become unbounded if false and -1 if true
   for i in range(iterations):
@@ -19,7 +20,7 @@ def isBounded(z,c): #returns iterations to become unbounded if false and -1 if t
 
   return -1
 
-f = open('julia.png','wb')
+f = open(filename,'wb')
 writer = png.Writer(width,height,greyscale=True)
 
 pixels = []
